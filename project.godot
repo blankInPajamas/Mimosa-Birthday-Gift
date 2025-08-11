@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Mimosa-hacking"
+run/main_scene="uid://btefae2f4se20"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="uid://cgfwt8cgixnxh"
+
+[autoload]
+
+Global="*res://scripts/global.gd"
+background_music="*res://scenes/bg_music.tscn"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="viewport"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
